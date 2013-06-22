@@ -4,6 +4,7 @@ root :to => redirect('/questions')
   resources :questions do
     member do
     get 'guess'
+    post 'answer'
   end
 end
 

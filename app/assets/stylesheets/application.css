@@ -16,3 +16,4 @@ footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 .footer_big { color: red;}
+h1 {padding-bottom: 100px; background-color: green; font-size: 15}
