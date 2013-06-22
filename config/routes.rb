@@ -1,5 +1,11 @@
 Banana::Application.routes.draw do
-  resources :questions
+ 
+root :to => redirect('/questions')
+  resources :questions do
+    member do
+    get 'guess'
+  end
+end
 
 
 root :to => redirect('/ideas')

@@ -21,6 +21,16 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def guess
+  @question = Question.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @question }
+    end
+  end
+
+
   # GET /questions/new
   # GET /questions/new.json
   def new
